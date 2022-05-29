@@ -1,0 +1,393 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;  
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 63.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/*Accueil*/
+#home{
+    background: linear-gradient(0deg, rgba(0,0,0,.6), rgba(0,0,0,.6));
+    position: relative;
+}
+
+#home .content h1 {
+    font-size: 5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    text-shadow: .1rem .1rem .3rem #333;
+    color: #fff;
+}
+
+#home .img-container{
+    position: absolute;
+    top: 0; left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+
+#home .img-container .img {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+#home .img-container .img_home {
+    display: block;
+} 
+
+.fa-bars {
+    transform: skew(-180deg) rotate(-180deg);
+}
+/*Fin*/
+
+
+/*Tarif*/
+#tarif .heading {
+    font-size: 7rem;
+    color: #000;
+    padding-top: 7rem;
+    margin-bottom: 2rem;
+}
+
+#tarif .heading span {
+    color: #993d36;
+}
+
+#tarif .heading h1 {
+    font-size: 5rem;
+    color: #000;
+}
+
+#tarif {
+    background-color: #fff;
+}
+
+#tarif .content .tableau {
+    border-radius: 2rem;
+    background: url(contact.jpg) no-repeat center / cover;
+    
+}
+
+#tarif .content .tableau h2 {
+    padding-top: 2rem;
+    font-size: 4rem;
+    color: #fff;
+}
+
+#tarif .content .tableau p {
+    color: #fff;
+    font-size: 2rem;
+    
+}
+/*Fin*/
+
+
+/*coupe*/
+#coupe {
+    background: #333;
+    min-height: 100vh;
+}
+
+#coupe .heading  {
+    font-size: 7rem;
+    color: #fff;
+    padding-top: 7rem;
+    margin-bottom: 2rem;
+}
+
+#coupe .heading span {
+    color: #2e5a6b;
+}
+
+#coupe .heading h1 {
+    font-size: 5rem;
+    color: #fff;
+}
+
+#coupe .heading p {
+    color: #ccc;
+    font-size: 2rem;
+}
+
+#coupe .card-container {
+    width: 95%;
+    margin: 7rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+#coupe .card-container .card {
+    height: 40rem;
+    width: 30rem;
+    background: #fff;
+    margin: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+#coupe .card-container .card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+#coupe .card-container .card p {
+    font-size: 1.4rem;
+    margin: 2rem 0;
+}
+/*fin*/
+
+
+/*produit*/
+#produit {
+    background: #000;
+    min-height: 100vh;
+}
+
+#produit .heading  {
+    font-size: 7rem;
+    color: #fff;
+    padding-top: 7rem;
+    margin-bottom: 2rem;
+}
+
+#produit .heading span {
+    color: #993d36;
+}
+
+#produit .heading h1 {
+    font-size: 5rem;
+    color: #fff;
+}
+
+#produit .heading p {
+    color: #ccc;
+    font-size: 3rem;
+}
+
+#produit .card-container {
+    width: 95%;
+    margin: 7rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+#produit .card-container .card {
+    height: 40rem;
+    width: 30rem;
+    background: #fff;
+    margin: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+#produit .card-container .card img {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+#produit .card-container .card p {
+    font-size: 1.4rem;
+    margin: 2rem 0;
+}
+
+#produit .card-container :hover {
+    transform: scale(.9);
+}
+/*Fin*/
+
+
+/**About*/
+#about .heading {
+    font-size: 7rem;
+    color: #000;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+#about .heading span {
+    color: #2e5a6b;
+}
+
+#about .heading h1 {
+    font-size: 5rem;
+    color: #000;
+}
+
+#about .content  img {
+    height: 550px;
+    width: 740px;
+}
+
+#about .content {
+    margin: 5rem auto;
+}
+
+#about .content p {
+    font-size: 1.5rem;
+}
+
+/*Fin About*/
+
+
+/*temoignage_avis*/
+#avis {
+    min-height: 100vh;
+    width: 100vw;
+    background: url(avis.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#avis .heading span {
+    color: #993d36;
+}
+
+#avis .heading h1 {
+    font-size: 5rem;
+    color: #fff;
+}
+
+#avis .card-container {
+    width: 70%;
+    margin: 7rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+#avis .card-container .card {
+    
+    width: 45rem;
+    background: #fff;
+    margin: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+#avis .card-container .card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+/*fin*/
+
+
+/*Debut du footer*/
+#footer {
+    background: #333;
+}
+
+#footer h1 {
+    font-size: 2.2rem;
+    margin: 0;
+    padding: 2rem 0;
+    text-align: center;
+    color: #fff;
+}
+
+#footer h2 {
+    font-size: 2.2rem;
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-color: #993d36;
+    text-decoration-style: solid;
+}
+
+#footer span {
+    color: #993d36;
+}
+
+#footer .brand {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#footer .brand .icons a {
+    font-size: 3rem;
+    margin: 2rem 1rem;
+    color: #fff;
+} 
+
+#footer .brand .icons a:hover {
+    color: #2e5a6b;
+    font-size: 4rem;
+}
+
+#footer .footer-liens {
+    text-align: center;
+    display: block;
+    flex-flow: column;
+    margin: 1rem 0;
+}
+
+#footer .footer-liens a {
+    color: #fff;
+    font-size: 1.7rem;
+    text-decoration: none;
+    margin: 5px;
+}
+
+#footer .footer-liens a:hover {
+    color: #2e5a6b;
+    font-size: 2rem;
+    margin: 2rem;
+    text-decoration: underline;
+}
+
+/*Fin du footer*/
+
+@media (max-width:420px) {
+    #about .content  img {
+        height: 350px;
+        width: 380px;
+    }
+
+    iframe {
+        width: 350px; 
+        height: 380px;
+    }
+
+}
+
+
+@media (max-width:825px) {
+    #about .content  img {
+        height: 450px;
+        width: 390px;
+    }
+
+    iframe {
+        width: 390px; 
+        height: 450px;
+    }
+}
