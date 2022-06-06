@@ -217,7 +217,7 @@ body{
 }
 
 #produit .card-container :hover {
-    transform: scale(.9);
+    transform: scale(1.15);
 }
 /*Fin*/
 
