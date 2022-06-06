@@ -151,6 +151,10 @@ body{
     border-radius: 1rem;
 }
 
+#coupe .card-container .card img:hover {
+    transform: scale(1.2);
+}
+
 #coupe .card-container .card p {
     font-size: 1.4rem;
     margin: 2rem 0;
@@ -216,9 +220,6 @@ body{
     margin: 2rem 0;
 }
 
-#produit .card-container :hover {
-    transform: scale(1.15);
-}
 /*Fin*/
 
 
